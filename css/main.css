@@ -102,10 +102,9 @@ a{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #39B05F;
-    border-radius: 50%;    
+    background-image: url("images/cut.png");  
     width: 55px;
-    height: 45px;
+    height: 50px;
     color: #FFF;
     font-size: 20px;    
     font-family: sans-serif;
@@ -217,7 +216,13 @@ a{
    768-480     - tablet 
    480-less    - phone landscape & smaller
 --------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) { }
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+
+    body{
+        background-color: green;
+    }
+
+}
 
 @media all and (min-width: 768px) and (max-width: 1024px) { }
 
