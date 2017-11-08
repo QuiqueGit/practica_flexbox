@@ -186,7 +186,6 @@ a{
 /* ACABA MENU SUPERIOR */
 
 .product {
-
     flex: 170px;
     margin: 10px;
 
@@ -216,36 +215,71 @@ a{
    768-480     - tablet 
    480-less    - phone landscape & smaller
 --------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) { 
-
-    body{
-        background-color: green;
-    }
-
-}
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
 
 @media all and (min-width: 768px) and (max-width: 1024px) { }
 
 @media all and (min-width: 480px) and (max-width: 768px) { 
-    .fl {
-    
-    }
-    #product-list .sort_btn {
-    
-    }
-    #product-list .product_bar {
 
-    
+    /*MENU*/
+
+    .product_bar {
+        height: auto;
     }
-    #product-list .product_bar_info {
-    
+
+    .product_bar div {
+        height: auto;
     }
-    .fr {
-     
+
+    .product_bar > .fl {
+        float: none;
+        width: 100%
     }
-    .pagination {
-    
-   }
+
+    .product_bar > .fr {
+        float: none;
+        text-align: center;
+    }
+
+    .sort_btn {
+        float: none;
+    }
+
+    .sort_btn > i {    
+        float: right;
+        margin-top: 7px;
+    }
+
+    /*PRODUCTOS*/
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product .cover_img {
+        width: 100%;
+    }
+
+    .pro_classes {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wholesale {
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;        
+    }
+
+    .toll_free_shipping {
+        width: 100%;
+        text-align: center;
+    }    
+
+    .review {
+
+    }
 }
 
 @media all and (max-width: 480px) {
